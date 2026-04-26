@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
@@ -40,12 +40,106 @@
   </head>
 
   <body class="font-jakarta bg-white text-gray-800">
+    <header class="bg-pink-light py-16 flex items-center justify-center">
+      <div
+        class="max-w-5xl mx-auto px-6 flex flex-col md:flex-row items-center gap-12"
+      >
+        <img
+          src="assets/profile.png"
+          alt="Foto Profil Winda"
+          class="w-48 h-48 rounded-full object-cover border-4 border-pink-300 shadow-md"
+        />
 
-    <header></header>
+        <div class="text-center md:text-left">
+          <h1 class="text-4xl font-bold text-gray-800">Winda</h1>
+          <p class="text-pink-500 font-medium mt-2 text-lg">
+            Teknologi Rekayasa Perangkat Lunak
+          </p>
+        </div>
+      </div>
+    </header>
 
-    <nav></nav>
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-white shadow-sm">
+      <div
+        class="max-w-5xl mx auto px-6 py-4 flex items-center justify-between"
+      >
+        <span class="text-pink-500 font-bold text-xl">Winda</span>
+        <ul class="flex gap-6 text-sm font-medium text-gray-600">
+          <li>
+            <a href="#about" class="hover:text-pink-500 transition">About</a>
+          </li>
+          <li>
+            <a href="#education" class="hover:text-pink-500 transition"
+              >Education</a
+            >
+          </li>
+          <li>
+            <a href="#projects" class="hover:text-pink-500 transition"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a href="#skills" class="hover:text-pink-500 transition">Skills</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-    <section id="about"></section>
+    <section id="about" class="py-20 bg-white">
+      <div class="max-w-5xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-gray-800 mb-2">Tentang Saya</h2>
+        <div class="w-16 h-1 bg-pink-400 rounded mb-8"></div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <p class="text-gray-600 leading-relaxed">
+            Saya merupakan mahasiswi Politeknik Negeri Batam dari jurusan Teknik
+            Informatika, program studi Teknologi Rekayasa Perangkat Lunak. Saya
+            memiliki ketertarikan di bidang web development dan saat ini fokus
+            mengembangkan kemampuan dalam membangun website yang modern,
+            responsif, dan user-friendly. Saya juga terus belajar mengikuti
+            perkembangan teknologi untuk meningkatkan kemampuan saya.
+          </p>
+
+          <div class="flex flex-col gap-4 text-gray-600">
+            <div class="flex items-center gap-3">
+              <i class="fa-solid fa-location-dot text-pink-400 w-5"></i>
+              <span>Tiban Indah, Kota Batam</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <i class="fa-solid fa-envelope text-pink-400 w-5"></i>
+              <span>winda.windaa03@gmail.com</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <i class="fa-brands fa-github text-pink-400 w-5"></i>
+              <a
+                href="https://github.com/windawindaa03"
+                target="_blank"
+                class="hover:text-pink-500 transition"
+                >windawindaa03</a
+              >
+            </div>
+            <div class="flex items-center gap-3">
+              <i class="fa-brands fa-linkedin text-pink-400 w-5"></i>
+              <a
+                href="https://www.linkedin.com/in/winda-w-998045331/"
+                target="_blank"
+                class="hover:text-pink-500 transition"
+                >Winda W</a
+              >
+            </div>
+            <div class="flex items-center gap-3">
+              <i class="fa-brands fa-instagram text-pink-400 w-5"></i>
+              <a
+                href="https://www.instagram.com/windaaq_/"
+                target="_blank"
+                class="hover:text-pink-500 transition"
+                >@windaaq_</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <section id="education"></section>
 
@@ -53,9 +147,44 @@
 
     <section id="skills"></section>
 
-    <footer></footer>
+    <footer class="bg-pink-soft py-8">
+      <div class="max-w-5xl mx-auto px-6 flex flex-col items-center gap-4">
+        <span class="text-pink-500 font-bold text-xl">Winda</span>
+
+        <div class="flex gap-6 text-gray-500">
+          <a
+            href="https://github.com/windawindaa03"
+            target="_blank"
+            class="hover:text-pink-500 transition text-xl"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/winda-w-998045331/"
+            target="_blank"
+            class="hover:text-pink-500 transition text-xl"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/windaaq_/"
+            target="_blank"
+            class="hover:text-pink-500 transition text-xl"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a
+            href="mailto:winda.windaa03@gmail.com"
+            class="hover:text-pink-500 transition text-xl"
+          >
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+        </div>
+
+        <p class="text-gray-400 text-sm">© 2026 Winda. All rights reserved.</p>
+      </div>
+    </footer>
 
     <script></script>
-
   </body>
 </html>
