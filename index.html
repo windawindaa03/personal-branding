@@ -19,7 +19,6 @@
 
     <script>
       tailwind.config = {
-
         theme: {
           extend: {
             fontFamily: {
@@ -33,11 +32,11 @@
                 medium: "#EC4899",
                 dark: "#BE185D",
               },
-              purple:{
-                 light: "#F5F3FF",
-            soft: "#EDE9FE",
-            medium: "#8B5CF6",
-            dark: "#6D28D9",
+              purple: {
+                light: "#F5F3FF",
+                soft: "#EDE9FE",
+                medium: "#8B5CF6",
+                dark: "#6D28D9",
               },
             },
           },
@@ -47,12 +46,14 @@
   </head>
 
   <body class="font-jakarta bg-white text-gray-800">
-     <nav class="fixed top-0 left-0 right-0 z-50 bg-white shadow-sm border-b border-purple-100">
+    <nav
+      class="fixed top-0 left-0 right-0 z-50 bg-white shadow-sm border-b border-purple-100"
+    >
       <div
-        class="max-w-5xl mx auto px-6 py-4 flex items-center justify-between"
+        class="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between"
       >
         <span class="text-pink-500 font-bold text-xl">Winda</span>
-        <ul class="flex gap-6 text-sm font-medium text-gray-600">
+        <ul class="flex gap-3 text-xs font-medium text-gray-600">
           <li>
             <a href="#about" class="hover:text-pink-500 transition">About</a>
           </li>
@@ -72,7 +73,7 @@
         </ul>
       </div>
     </nav>
-    <header class="bg-pink-light py-16 flex items-center justify-center">
+    <header class="bg-pink-light py-16 pt-20 flex items-center justify-center">
       <div
         class="max-w-5xl mx-auto px-6 flex flex-col md:flex-row items-center gap-12"
       >
@@ -90,17 +91,15 @@
         </div>
       </div>
     </header>
-        
-
- 
-
 
     <section id="about" class="py-20 bg-white">
       <div class="max-w-5xl mx-auto px-6">
         <h2 class="text-3xl font-bold text-gray-800 mb-2">Tentang Saya</h2>
         <div class="w-16 h-1 bg-pink-400 rounded mb-8"></div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center animate-on-scroll">
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center animate-on-scroll"
+        >
           <p class="text-gray-600 leading-relaxed">
             Saya merupakan mahasiswi Politeknik Negeri Batam dari jurusan Teknik
             Informatika, program studi Teknologi Rekayasa Perangkat Lunak. Saya
@@ -150,177 +149,301 @@
         </div>
       </div>
     </section>
- 
 
     <section id="education" class="py-20 bg-purple-light">
-    <div class="max-w-5xl mx-auto px-6">
-        <h2 class="text-3xl font-bold text-gray-800 mb-2">Riwayat Pendidikan</h2>
+      <div class="max-w-5xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-gray-800 mb-2">
+          Riwayat Pendidikan
+        </h2>
         <div class="w-16 h-1 bg-purple-medium rounded mb-8"></div>
-     <div class="flex flex-col gap-6">
+        <div class="flex flex-col gap-6">
+          <div
+            class="bg-white rounded-2xl p-6 shadow-sm border border-pink-100 animate-on-scroll"
+          >
+            <div class="flex items-start justify-between">
+              <div>
+                <h3
+                  class="text-lg font-bold text-gray-800 flex items-center gap-2"
+                >
+                  <i class="fa-solid fa-graduation-cap text-purple-medium"></i>
+                  Politeknik Negeri Batam
+                </h3>
 
-      <div class="bg-white rounded-2xl p-6 shadow-sm border border-pink-100 animate-on-scroll">
-        <div class="flex items-start justify-between">
-          <div>
-            <h3 class="text-lg font-bold text-gray-800 flex items-center gap-2">
-                <i class="fa-solid fa-graduation-cap text-purple-medium"></i>
-  Politeknik Negeri Batam
-            </h3>
-
-            <p class="text-pink-500 font-medium mt-1">Teknologi Rekayasa Perangkat Lunak</p>
-            <p class="text-gray-500 text-sm mt-1">Teknik Informatika</p>
+                <p class="text-pink-500 font-medium mt-1">
+                  Teknologi Rekayasa Perangkat Lunak
+                </p>
+                <p class="text-gray-500 text-sm mt-1">Teknik Informatika</p>
+              </div>
+              <span class="text-sm text-gray-400 whitespace-nowrap"
+                >2025 - Sekarang</span
+              >
+            </div>
           </div>
-          <span class="text-sm text-gray-400 whitespace-nowrap">2025 - Sekarang</span>
+        </div>
+
+        <div
+          class="bg-white rounded-2xl p-6 shadow-sm border border-pink-100 animate-on-scroll"
+        >
+          <div class="flex items-start justify-between">
+            <div>
+              <h3
+                class="text-lg font-bold text-gray-800 flex items-center gap-2"
+              >
+                <i class="fa-solid fa-school text-purple-medium"></i>
+                SMA Negeri 2 Batam
+              </h3>
+              <p class="text-pink-500 font-medium mt-1">IPA</p>
+            </div>
+            <span class="text-sm text-gray-400 whitespace-nowrap"
+              >2022 - 2025</span
+            >
+          </div>
         </div>
       </div>
-
-      <div class="bg-white rounded-2xl p-6 shadow-sm border border-pink-100  animate-on-scroll">
-        <div class="flex items-start justify-between">
-          <div>
-            <h3 class="text-lg font-bold text-gray-800 flex items-center gap-2">
-<i class="fa-solid fa-school text-purple-medium"></i>
-  SMA Negeri 2 Batam
-            </h3>
-            <p class="text-pink-500 font-medium mt-1">IPA</p>
-          </div>
-          <span class="text-sm text-gray-400 whitespace-nowrap">2022 - 2025</span>
-        </div>
-      </div>
-      </section>
+    </section>
 
     <section id="projects" class="py-20 bg-white">
-  <div class="max-w-5xl mx-auto px-6">
+      <div class="max-w-5xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-gray-800 mb-2">Riwayat Proyek</h2>
+        <div class="w-16 h-1 bg-purple-medium rounded mb-8"></div>
 
-    <h2 class="text-3xl font-bold text-gray-800 mb-2">Riwayat Proyek</h2>
-    <div class="w-16 h-1 bg-purple-medium rounded mb-8"></div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div
+            class="bg-pink-light rounded-2xl p-6 border border-pink-100 flex flex-col gap-3 animate-on-scroll hover:-translate-y-2 transition duration-300"
+          >
+            <div class="flex items-center justify-between">
+              <span
+                class="text-xs font-medium bg-pink-soft text-pink-dark px-3 py-1 rounded-full"
+                >Selesai</span
+              >
+              <span class="text-xs text-gray-400">2025</span>
+            </div>
+            <h3 class="text-lg font-bold text-gray-800">Sistem Akademik</h3>
+            <p class="text-xs text-gray-400 font-medium">
+              Tugas Mata Kuliah PBW
+            </p>
+            <p class="text-xs text-gray-400 font-medium"></p>
+            <p class="text-gray-500 text-sm leading-relaxed">
+              Sistem berbasis web untuk mengelola data sivitas akademika seperti
+              mahasiswa, dosen, dan pegawai kampus secara terstruktur dan
+              efisien.
+            </p>
+            <div class="flex flex-wrap gap-2 mt-auto">
+              <span
+                class="text-xs bg-white border border-pink-200 text-pink-500 px-2 py-1 rounded-full"
+                >PHP</span
+              >
+              <span
+                class="text-xs bg-white border border-pink-200 text-pink-500 px-2 py-1 rounded-full"
+                >MySQL</span
+              >
+              <span
+                class="text-xs bg-white border border-pink-200 text-pink-500 px-2 py-1 rounded-full"
+                >Bootstrap</span
+              >
+            </div>
+            <a
+              href="https://github.com/windawindaa03/project_matkul_PBW"
+              target="_blank"
+              class="flex items-center gap-2 text-xs text-pink-500 hover:text-pink-700 transition mt-1"
+            >
+              <i class="fa-brands fa-github"></i> View on GitHub
+            </a>
+          </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div
+            class="bg-pink-light rounded-2xl p-6 border border-pink-100 flex flex-col gap-3 animate-on-scroll hover:-translate-y-2 transition duration-300"
+          >
+            <div class="flex items-center justify-between">
+              <span
+                class="text-xs font-medium bg-pink-soft text-pink-dark px-3 py-1 rounded-full"
+                >Selesai</span
+              >
+              <span class="text-xs text-gray-400">2025</span>
+            </div>
+            <h3 class="text-lg font-bold text-gray-800">SITAWAR</h3>
+            <p class="text-xs text-gray-400 font-medium">PBL Semester 1</p>
+            <p class="text-gray-500 text-sm leading-relaxed">
+              Sistem Terpadu Administrasi Warga untuk mengelola administrasi
+              RT/RW secara digital, mencakup manajemen data warga, pengajuan
+              surat, dan verifikasi dokumen.
+            </p>
+            <div class="flex flex-wrap gap-2 mt-auto">
+              <span
+                class="text-xs bg-white border border-pink-200 text-pink-500 px-2 py-1 rounded-full"
+                >PHP</span
+              >
+              <span
+                class="text-xs bg-white border border-pink-200 text-pink-500 px-2 py-1 rounded-full"
+                >MySQL</span
+              >
+              <span
+                class="text-xs bg-white border border-pink-200 text-pink-500 px-2 py-1 rounded-full"
+                >Bootstrap</span
+              >
+              <span
+                class="text-xs bg-white border border-pink-200 text-pink-500 px-2 py-1 rounded-full"
+                >Chart.js</span
+              >
+            </div>
+            <a
+              href="https://github.com/ranggacuyyu/PBL_SITAWAR"
+              target="_blank"
+              class="flex items-center gap-2 text-xs text-pink-500 hover:text-pink-700 transition mt-1"
+            >
+              <i class="fa-brands fa-github"></i> View on GitHub
+            </a>
+          </div>
 
-      <div class="bg-pink-light rounded-2xl p-6 border border-pink-100 flex flex-col gap-3 animate-on-scroll hover:-translate-y-2 transition duration-300">
-        <div class="flex items-center justify-between">
-          <span class="text-xs font-medium bg-pink-soft text-pink-dark px-3 py-1 rounded-full">Selesai</span>
-          <span class="text-xs text-gray-400">2025</span>
+          <div
+            class="bg-pink-light rounded-2xl p-6 border border-pink-100 flex flex-col gap-3 animate-on-scroll hover:-translate-y-2 transition duration-300"
+          >
+            <div class="flex items-center justify-between">
+              <span
+                class="text-xs font-medium bg-green-100 text-green-700 px-3 py-1 rounded-full"
+                >On Progress</span
+              >
+              <span class="text-xs text-gray-400">2026</span>
+            </div>
+            <h3 class="text-lg font-bold text-gray-800">Coopify</h3>
+            <p class="text-xs text-gray-400 font-medium">PBL Semester 2</p>
+            <p class="text-gray-500 text-sm leading-relaxed">
+              Aplikasi koperasi berbasis web untuk memudahkan sivitas akademika
+              dalam melakukan transaksi online, pemesanan produk, dan pembayaran
+              digital.
+            </p>
+            <div class="flex flex-wrap gap-2 mt-auto">
+              <span
+                class="text-xs bg-white border border-pink-200 text-pink-500 px-2 py-1 rounded-full"
+                >Laravel</span
+              >
+              <span
+                class="text-xs bg-white border border-pink-200 text-pink-500 px-2 py-1 rounded-full"
+                >React.js</span
+              >
+              <span
+                class="text-xs bg-white border border-pink-200 text-pink-500 px-2 py-1 rounded-full"
+                >Tailwind</span
+              >
+              <span
+                class="text-xs bg-white border border-pink-200 text-pink-500 px-2 py-1 rounded-full"
+                >MySQL</span
+              >
+            </div>
+          </div>
         </div>
-        <h3 class="text-lg font-bold text-gray-800">Sistem Akademik</h3>
-        <p class="text-xs text-gray-400 font-medium">Tugas Mata Kuliah PBW</p>
-        <p class="text-xs text-gray-400 font-medium"></p>
-        <p class="text-gray-500 text-sm leading-relaxed">
-          Sistem berbasis web untuk mengelola data sivitas akademika seperti mahasiswa, dosen, dan pegawai kampus secara terstruktur dan efisien.
-        </p>
-        <div class="flex flex-wrap gap-2 mt-auto">
-<span class="text-xs bg-white border border-pink-200 text-pink-500 px-2 py-1 rounded-full">PHP</span>
-          <span class="text-xs bg-white border border-pink-200 text-pink-500 px-2 py-1 rounded-full">MySQL</span>
-          <span class="text-xs bg-white border border-pink-200 text-pink-500 px-2 py-1 rounded-full">Bootstrap</span>
-        </div>
-         <a href="https://github.com/windawindaa03/project_matkul_PBW" target="_blank" 
-   class="flex items-center gap-2 text-xs text-pink-500 hover:text-pink-700 transition mt-1">
-  <i class="fa-brands fa-github"></i> View on GitHub
-</a>
       </div>
-      
-
-      <div class="bg-pink-light rounded-2xl p-6 border border-pink-100 flex flex-col gap-3 animate-on-scroll hover:-translate-y-2 transition duration-300">
-        <div class="flex items-center justify-between">
-          <span class="text-xs font-medium bg-pink-soft text-pink-dark px-3 py-1 rounded-full">Selesai</span>
-          <span class="text-xs text-gray-400">2025</span>
-        </div>
-        <h3 class="text-lg font-bold text-gray-800">SITAWAR</h3>
-        <p class="text-xs text-gray-400 font-medium">PBL Semester 1</p>
-        <p class="text-gray-500 text-sm leading-relaxed">
-          Sistem Terpadu Administrasi Warga untuk mengelola administrasi RT/RW secara digital, mencakup manajemen data warga, pengajuan surat, dan verifikasi dokumen.
-        </p>
-        <div class="flex flex-wrap gap-2 mt-auto">
-            
-          <span class="text-xs bg-white border border-pink-200 text-pink-500 px-2 py-1 rounded-full">PHP</span>
-          <span class="text-xs bg-white border border-pink-200 text-pink-500 px-2 py-1 rounded-full">MySQL</span>
-          <span class="text-xs bg-white border border-pink-200 text-pink-500 px-2 py-1 rounded-full">Bootstrap</span>
-          <span class="text-xs bg-white border border-pink-200 text-pink-500 px-2 py-1 rounded-full">Chart.js</span>
-        </div>
-        <a href="https://github.com/ranggacuyyu/PBL_SITAWAR" target="_blank" 
-   class="flex items-center gap-2 text-xs text-pink-500 hover:text-pink-700 transition mt-1">
-  <i class="fa-brands fa-github"></i> View on GitHub
-</a>
-      </div>
-
-      <div class="bg-pink-light rounded-2xl p-6 border border-pink-100 flex flex-col gap-3 animate-on-scroll hover:-translate-y-2 transition duration-300">
-        <div class="flex items-center justify-between">
-          <span class="text-xs font-medium bg-green-100 text-green-700 px-3 py-1 rounded-full">On Progress</span>
-          <span class="text-xs text-gray-400">2026</span>
-        </div>
-        <h3 class="text-lg font-bold text-gray-800">Coopify</h3>
-        <p class="text-xs text-gray-400 font-medium">PBL Semester 2</p>
-        <p class="text-gray-500 text-sm leading-relaxed">
-          Aplikasi koperasi berbasis web untuk memudahkan sivitas akademika dalam melakukan transaksi online, pemesanan produk, dan pembayaran digital.
-        </p>
-        <div class="flex flex-wrap gap-2 mt-auto">
-          <span class="text-xs bg-white border border-pink-200 text-pink-500 px-2 py-1 rounded-full">Laravel</span>
-          <span class="text-xs bg-white border border-pink-200 text-pink-500 px-2 py-1 rounded-full">React.js</span>
-          <span class="text-xs bg-white border border-pink-200 text-pink-500 px-2 py-1 rounded-full">Tailwind</span>
-          <span class="text-xs bg-white border border-pink-200 text-pink-500 px-2 py-1 rounded-full">MySQL</span>
-        </div>
-        
-      </div>
-
-    </div>
-  </div>
-</section>
+    </section>
 
     <section id="skills" class="py-20 bg-pink-light">
-  <div class="max-w-5xl mx-auto px-6">
+      <div class="max-w-5xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-gray-800 mb-2">Skillset</h2>
+        <div class="w-16 h-1 bg-pink-400 rounded mb-8"></div>
 
-    <h2 class="text-3xl font-bold text-gray-800 mb-2">Skillset</h2>
-    <div class="w-16 h-1 bg-pink-400 rounded mb-8"></div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div
+            class="bg-white rounded-2xl p-6 border border-pink-100 shadow-sm animate-on-scroll"
+          >
+            <h3 class="font-bold text-gray-800 mb-4 flex items-center gap-2">
+              <i class="fa-solid fa-code text-pink-400"></i> Programming
+            </h3>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="text-sm bg-purple-soft text-purple-dark px-3 py-1 rounded-full"
+                >HTML</span
+              >
+              <span
+                class="text-sm bg-purple-soft text-purple-dark px-3 py-1 rounded-full"
+                >CSS</span
+              >
+              <span
+                class="text-sm bg-purple-soft text-purple-dark px-3 py-1 rounded-full"
+                >JavaScript (dasar)</span
+              >
+              <span
+                class="text-sm bg-purple-soft text-purple-dark px-3 py-1 rounded-full"
+                >PHP (dasar)</span
+              >
+            </div>
+          </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div
+            class="bg-white rounded-2xl p-6 border border-pink-100 shadow-sm animate-on-scroll"
+          >
+            <h3 class="font-bold text-gray-800 mb-4 flex items-center gap-2">
+              <i class="fa-solid fa-layer-group text-pink-400"></i> Framework /
+              Library
+            </h3>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="text-sm bg-purple-soft text-purple-dark px-3 py-1 rounded-full"
+                >Bootstrap (dasar)</span
+              >
+              <span
+                class="text-sm bg-purple-soft text-purple-dark px-3 py-1 rounded-full"
+                >React.js (dasar)</span
+              >
+              <span
+                class="text-sm bg-purple-soft text-purple-dark px-3 py-1 rounded-full"
+                >Laravel (dasar)</span
+              >
+              <span
+                class="text-sm bg-purple-soft text-purple-dark px-3 py-1 rounded-full"
+                >Tailwind CSS (dasar)</span
+              >
+            </div>
+          </div>
 
-      <div class="bg-white rounded-2xl p-6 border border-pink-100 shadow-sm animate-on-scroll  ">
-        <h3 class="font-bold text-gray-800 mb-4 flex items-center gap-2">
-          <i class="fa-solid fa-code text-pink-400"></i> Programming
-        </h3>
-        <div class="flex flex-wrap gap-2">
-          <span class="text-sm bg-purple-soft text-purple-dark px-3 py-1 rounded-full">HTML</span>
-          <span class="text-sm bg-purple-soft text-purple-dark px-3 py-1 rounded-full">CSS</span>
-          <span class="text-sm bg-purple-soft text-purple-dark px-3 py-1 rounded-full">JavaScript (dasar)</span>
-          <span class="text-sm bg-purple-soft text-purple-dark px-3 py-1 rounded-full">PHP (dasar)</span>
+          <div
+            class="bg-white rounded-2xl p-6 border border-pink-100 shadow-sm animate-on-scroll"
+          >
+            <h3 class="font-bold text-gray-800 mb-4 flex items-center gap-2">
+              <i class="fa-solid fa-wrench text-pink-400"></i> Tools
+            </h3>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="text-sm bg-purple-soft text-purple-dark px-3 py-1 rounded-full"
+                >Git & GitHub</span
+              >
+              <span
+                class="text-sm bg-purple-soft text-purple-dark px-3 py-1 rounded-full"
+                >Visual Studio Code</span
+              >
+              <span
+                class="text-sm bg-purple-soft text-purple-dark px-3 py-1 rounded-full"
+                >Canva</span
+              >
+            </div>
+          </div>
+
+          <div
+            class="bg-white rounded-2xl p-6 border border-pink-100 shadow-sm animate-on-scroll"
+          >
+            <h3 class="font-bold text-gray-800 mb-4 flex items-center gap-2">
+              <i class="fa-solid fa-handshake text-pink-400"></i> Soft Skills
+            </h3>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="text-sm bg-purple-soft text-purple-dark px-3 py-1 rounded-full"
+                >Komunikasi</span
+              >
+              <span
+                class="text-sm bg-purple-soft text-purple-dark px-3 py-1 rounded-full"
+                >Kerja Sama Tim</span
+              >
+              <span
+                class="text-sm bg-purple-soft text-purple-dark px-3 py-1 rounded-full"
+                >Belajar Hal Baru</span
+              >
+              <span
+                class="text-sm bg-purple-soft text-purple-dark px-3 py-1 rounded-full"
+                >Manajemen Waktu</span
+              >
+            </div>
+          </div>
         </div>
       </div>
-
-      <div class="bg-white rounded-2xl p-6 border border-pink-100 shadow-sm  animate-on-scroll">
-        <h3 class="font-bold text-gray-800 mb-4 flex items-center gap-2">
-          <i class="fa-solid fa-layer-group text-pink-400"></i> Framework / Library
-        </h3>
-        <div class="flex flex-wrap gap-2">
-         <span class="text-sm bg-purple-soft text-purple-dark px-3 py-1 rounded-full">Bootstrap (dasar)</span>
-<span class="text-sm bg-purple-soft text-purple-dark px-3 py-1 rounded-full">React.js (dasar)</span>
-<span class="text-sm bg-purple-soft text-purple-dark px-3 py-1 rounded-full">Laravel (dasar)</span>
-<span class="text-sm bg-purple-soft text-purple-dark px-3 py-1 rounded-full">Tailwind CSS (dasar)</span>
-        </div>
-      </div>
-
-      <div class="bg-white rounded-2xl p-6 border border-pink-100 shadow-sm  animate-on-scroll">
-        <h3 class="font-bold text-gray-800 mb-4 flex items-center gap-2">
-          <i class="fa-solid fa-wrench text-pink-400"></i> Tools
-        </h3>
-        <div class="flex flex-wrap gap-2">
-          <span class="text-sm bg-purple-soft text-purple-dark px-3 py-1 rounded-full">Git & GitHub</span>
-          <span class="text-sm bg-purple-soft text-purple-dark px-3 py-1 rounded-full">Visual Studio Code</span>
-          <span class="text-sm bg-purple-soft text-purple-dark px-3 py-1 rounded-full">Canva</span>
-        </div>
-      </div>
-
-      <div class="bg-white rounded-2xl p-6 border border-pink-100 shadow-sm animate-on-scroll">
-        <h3 class="font-bold text-gray-800 mb-4 flex items-center gap-2">
-          <i class="fa-solid fa-handshake text-pink-400"></i> Soft Skills
-        </h3>
-        <div class="flex flex-wrap gap-2">
-          <span class="text-sm bg-purple-soft text-purple-dark px-3 py-1 rounded-full">Komunikasi</span>
-<span class="text-sm bg-purple-soft text-purple-dark px-3 py-1 rounded-full">Kerja Sama Tim</span>
-<span class="text-sm bg-purple-soft text-purple-dark px-3 py-1 rounded-full">Belajar Hal Baru</span>
-<span class="text-sm bg-purple-soft text-purple-dark px-3 py-1 rounded-full">Manajemen Waktu</span>
-      </div>
-
-    </div>
-  </div>
-</section>
+    </section>
 
     <footer class="bg-purple-soft py-8">
       <div class="max-w-5xl mx-auto px-6 flex flex-col items-center gap-4">
@@ -360,19 +483,27 @@
       </div>
     </footer>
     <script>
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("opacity-100", "translate-y-0");
-        entry.target.classList.remove("opacity-0", "translate-y-8");
-      }
-    });
-  }, { threshold: 0.1 });
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("opacity-100", "translate-y-0");
+              entry.target.classList.remove("opacity-0", "translate-y-8");
+            }
+          });
+        },
+        { threshold: 0.1 },
+      );
 
-  document.querySelectorAll(".animate-on-scroll").forEach((el) => {
-    el.classList.add("opacity-0", "translate-y-8", "transition", "duration-700");
-    observer.observe(el);
-  });
-</script>
+      document.querySelectorAll(".animate-on-scroll").forEach((el) => {
+        el.classList.add(
+          "opacity-0",
+          "translate-y-8",
+          "transition",
+          "duration-700",
+        );
+        observer.observe(el);
+      });
+    </script>
   </body>
 </html>
